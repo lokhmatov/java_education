@@ -1,11 +1,13 @@
 package java_oop.models;
 
 import java.time.DayOfWeek;
+import java.util.HashMap;
 import java.util.Map;
 
 public class Staff {
     private String staffName;
     private Map<Integer, DayOfWeek> dutyDays;
+
 
     public Staff(String staffName) {
         this.staffName = staffName;
@@ -25,10 +27,20 @@ public class Staff {
     }
 
     public Map<Integer, DayOfWeek> getDutyDays() {
+        dutyDays = new HashMap<>();
         return dutyDays;
     }
 
     public void setDutyDays(Map<Integer, DayOfWeek> dutyDays) {
         this.dutyDays = dutyDays;
     }
+
+    @Override
+    public String toString() {
+        return "Staff{" +
+                "staffName='" + staffName + '\'' +
+                ", dutyDays=" + dutyDays +
+                '}';
+    }
+
 }

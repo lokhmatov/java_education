@@ -18,9 +18,8 @@ public class Manager {
         // -- Initialization list of staff
         List<Staff> listOfStaff = List.of(
                 new Staff("Юра"),
-                new Staff("Дима"),
-                new Staff("Женя"),
-                new Staff("Рома"));
+                new Staff("Рома"),
+                new Staff("Дима"));
 
         // -- Generate schedule
         Schedule schedule = new Schedule();
